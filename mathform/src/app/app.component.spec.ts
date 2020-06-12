@@ -22,10 +22,10 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('mathform');
   });
 
-  it('should render title in a h1 tag', () => {
+  it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to mathform!');
+    expect(compiled.querySelector('.content span').textContent).toContain('mathform app is running!');
   });
 });
