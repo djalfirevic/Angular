@@ -33,7 +33,7 @@ export class EquationComponent implements OnInit {
     this.mathForm.statusChanges
       .pipe(
         filter((value) => value === "VALID"),
-        delay(500),
+        delay(200),
         scan(
           (acc) => {
             return {
