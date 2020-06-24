@@ -8,8 +8,8 @@ export class MatchPassword implements Validator {
 
     if (password === passwordConfirmation) {
       return null;
+    } else {
+      return { passwordsDontMatch: true };
     }
-
-    return { passwordsDontMatch: true };
   }
 }
